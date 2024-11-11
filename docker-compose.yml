@@ -1,0 +1,9 @@
+version: '3'
+services:
+  app:
+    build: .
+    ports:
+      - "8000:8000"
+    container_name: receipt-extraction
+    volumes:
+      - "D:/webtiga/OCR_llm/layoutlm-base-uncased:/app/model"
